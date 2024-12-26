@@ -1,7 +1,7 @@
 node {
     
         stage('Breakfast') {
-            echo 'I am having breakfast.'
+            echo 'I am having a breakfast.'
         }
         stage('Workout') {
             echo 'I am working out.'
