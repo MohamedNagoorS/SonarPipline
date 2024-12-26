@@ -1,4 +1,5 @@
-def fibonacci_generator(n):
+'''fibonacci number'''
+def fibonacci_generator(n:int)->int:
     """Generate the first n Fibonacci numbers using a generator."""
     a, b = 0, 1
     for _ in range(n):
