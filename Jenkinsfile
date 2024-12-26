@@ -34,7 +34,7 @@ pipeline {
             echo 'My day went well.'
         }
       failure{
-        echo 'My day didn't went well'
+        echo "My day didn't went well."
       }
     }
 }
