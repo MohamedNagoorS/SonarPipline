@@ -28,7 +28,7 @@ pipeline{
                 -Dsonar.projectKey=Jenkins-Script ^
                 -Dsonar.sources=." ^
                 -Dsonar.host.url=http://localhost:9000 ^
-                -Dsonar.token=sqp_2f6928eacb6fa646c185441562a343b5f964c754 ^
+                -Dsonar.token=%SONAR_TOKEN%
                 '''
             }
         }
