@@ -1,40 +1,25 @@
-pipeline {
-    agent any 
-
-    stages {
+node {
+    
         stage('Breakfast') {
-            steps {
-                echo 'I am having breakfast.'
-            }
+            echo 'I am having breakfast.'
         }
         stage('Workout') {
-            steps {
-                echo 'I am working out.'
-            }
+            echo 'I am working out.'
         }
         stage('Study') {
-            steps {
-                echo 'I am studying.'
-            }
+            echo 'I am studying.'
         }
         stage('Family Time') {
-            steps {
-                echo 'I am spending time with my family.'
-            }
+            echo 'I am spending time with my family.'
         }
         stage('Play') {
-            steps {
-                echo 'I am playing.'
-            }
+            echo 'I am playing.'
         }
-    }
-
-    post {
-        success {
+        if (currentBuild.result == null || currentBuild.result == 'SUCCESS') {
             echo 'My day went well.'
         }
-      failure{
-        echo "My day didn't went well."
-      }
+        else{
+        echo'did not went well'
     }
+    
 }
