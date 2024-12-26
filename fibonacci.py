@@ -1,5 +1,6 @@
 '''fibonacci number'''
-def fibonacci_generator(n:int)->int:
+from typing import Generator
+def fibonacci_generator(n:int)->Generator[int, None, None]:
     """Generate the first n Fibonacci numbers using a generator."""
     a, b = 0, 1
     for _ in range(n):
